@@ -34,11 +34,11 @@ public class Empresa {
     }
 
     public double calcularFolhaSalarial() {
-        double total = 0;
+        double totalSalario = 0;
         for (Funcionario f : funcionarios) {
-            total += f.getSalario();
+            totalSalario += f.getSalario();
         }
-        return total;
+        return totalSalario;
     }
 
     public void aplicarAumento(Double percentual) {
@@ -64,13 +64,11 @@ public class Empresa {
         sb.append("Empresa: ").append(nome)
         .append("CNPJ: ").append(cnpj)
         .append("Endereço: ").append(endereco.exibirDados())
-        .append("Funcionários");
+        .append("Dados dos Funcionários: ");
         
         for (Funcionario f : funcionarios) {
             sb.append(" - ").append(f.exibirDados()).append("\n");
         }
-
-        sb.append("Folha Salarial Total: R$ ").append(calcularFolhaSalarial());
         return sb.toString();
     }
 }

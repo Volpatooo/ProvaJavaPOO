@@ -5,7 +5,7 @@ public class Main {
         Endereco endereco2 = new Endereco("Rua Leopoldo", 200, "Blumenau");
 
         // Criando empresas
-        Empresa empresa1 = new Empresa("Sênior", "11111111111111", endereco1);
+        Empresa empresa1 = new Empresa("Sênior",     "11111111111111", endereco1);
         Empresa empresa2 = new Empresa("Premier Soft", "22222222222222", endereco2);
 
         // Criando funcionários para empresa1
@@ -16,7 +16,7 @@ public class Main {
         // Criando funcionários para empresa2
         Funcionario f4 = new Funcionario("João", "45678901234", 5000.0);
         Funcionario f5 = new Funcionario("Heitor", "56789012345", 6000.0);
-        Funcionario f6 = new Funcionario("José", "67890123456", -100.0);
+        Funcionario f6 = new Funcionario("José", "67890123456", 10000.0);
 
         // Adicionando funcionários às empresas
         empresa1.adicionarFuncionario(f1);

@@ -2,11 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sistema {
-    private List<Empresa> empresas;
-
-    public Sistema() {
-        this.empresas = new ArrayList<>();
-    }
+    private ArrayList<Empresa> empresas = new ArrayList<>();
 
     public void adicionarEmpresa(Empresa empresa) {
         empresas.add(empresa);
